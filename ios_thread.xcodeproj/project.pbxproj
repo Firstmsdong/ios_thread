@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D37ED2CABFFDC0C109A6D7E /* libPods-ios_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBA7CEDC87778F5FDA9B819 /* libPods-ios_thread.a */; };
 		6D1A3B8025F8742B00F71725 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3B7F25F8742B00F71725 /* AppDelegate.m */; };
 		6D1A3B8325F8742B00F71725 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3B8225F8742B00F71725 /* SceneDelegate.m */; };
 		6D1A3B8625F8742B00F71725 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3B8525F8742B00F71725 /* ViewController.m */; };
@@ -17,6 +18,20 @@
 		6D1A3B9425F8742E00F71725 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3B9325F8742E00F71725 /* main.m */; };
 		6D1A3B9E25F8742E00F71725 /* ios_threadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3B9D25F8742E00F71725 /* ios_threadTests.m */; };
 		6D1A3BA925F8742E00F71725 /* ios_threadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BA825F8742E00F71725 /* ios_threadUITests.m */; };
+		6D1A3BD925F8928C00F71725 /* MXTabBarCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BC525F8928C00F71725 /* MXTabBarCenterButton.m */; };
+		6D1A3BDA25F8928C00F71725 /* tabbar_classification_fill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D1A3BC625F8928C00F71725 /* tabbar_classification_fill@2x.png */; };
+		6D1A3BDB25F8928C00F71725 /* MXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BC725F8928C00F71725 /* MXTabBarController.m */; };
+		6D1A3BDC25F8928C00F71725 /* MXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BCB25F8928C00F71725 /* MXTabBar.m */; };
+		6D1A3BDD25F8928C00F71725 /* UIImageView+ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BCE25F8928C00F71725 /* UIImageView+ImageView.m */; };
+		6D1A3BDE25F8928C00F71725 /* UILabel+Labbel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BD025F8928C00F71725 /* UILabel+Labbel.m */; };
+		6D1A3BDF25F8928C00F71725 /* UIButton+MSDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BD125F8928C00F71725 /* UIButton+MSDButton.m */; };
+		6D1A3BE025F8928C00F71725 /* UITextField+MSDTextFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BD425F8928C00F71725 /* UITextField+MSDTextFile.m */; };
+		6D1A3BEF25F892E300F71725 /* NSThreadAll.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BEE25F892E300F71725 /* NSThreadAll.m */; };
+		6D1A3BF525F892FD00F71725 /* GCDAll.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BF425F892FD00F71725 /* GCDAll.m */; };
+		6D1A3BFB25F8931B00F71725 /* NSOperationAll.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3BFA25F8931B00F71725 /* NSOperationAll.m */; };
+		6D1A3C0D25F8980400F71725 /* MSDViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3C0925F8980400F71725 /* MSDViewCell.m */; };
+		6D1A3C0E25F8980400F71725 /* MSDViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3C0C25F8980400F71725 /* MSDViewModel.m */; };
+		6D1A3C1425F89DB800F71725 /* GCD_dispatch_group.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3C1325F89DB800F71725 /* GCD_dispatch_group.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CBA7CEDC87778F5FDA9B819 /* libPods-ios_thread.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios_thread.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9CF00C43F3FAD8A9BCB407 /* Pods-ios_thread.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_thread.debug.xcconfig"; path = "Target Support Files/Pods-ios_thread/Pods-ios_thread.debug.xcconfig"; sourceTree = "<group>"; };
+		3F7489E6825436EDBECDF329 /* Pods-ios_thread.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_thread.release.xcconfig"; path = "Target Support Files/Pods-ios_thread/Pods-ios_thread.release.xcconfig"; sourceTree = "<group>"; };
 		6D1A3B7B25F8742A00F71725 /* ios_thread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_thread.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1A3B7E25F8742B00F71725 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D1A3B7F25F8742B00F71725 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +74,34 @@
 		6D1A3BA425F8742E00F71725 /* ios_threadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_threadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1A3BA825F8742E00F71725 /* ios_threadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_threadUITests.m; sourceTree = "<group>"; };
 		6D1A3BAA25F8742E00F71725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D1A3BC525F8928C00F71725 /* MXTabBarCenterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXTabBarCenterButton.m; sourceTree = "<group>"; };
+		6D1A3BC625F8928C00F71725 /* tabbar_classification_fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_classification_fill@2x.png"; sourceTree = "<group>"; };
+		6D1A3BC725F8928C00F71725 /* MXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXTabBarController.m; sourceTree = "<group>"; };
+		6D1A3BC825F8928C00F71725 /* MXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXTabBar.h; sourceTree = "<group>"; };
+		6D1A3BC925F8928C00F71725 /* MXTabBarCenterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXTabBarCenterButton.h; sourceTree = "<group>"; };
+		6D1A3BCA25F8928C00F71725 /* MXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXTabBarController.h; sourceTree = "<group>"; };
+		6D1A3BCB25F8928C00F71725 /* MXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXTabBar.m; sourceTree = "<group>"; };
+		6D1A3BCD25F8928C00F71725 /* UIButton+MSDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MSDButton.h"; sourceTree = "<group>"; };
+		6D1A3BCE25F8928C00F71725 /* UIImageView+ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ImageView.m"; sourceTree = "<group>"; };
+		6D1A3BCF25F8928C00F71725 /* UITextField+MSDTextFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+MSDTextFile.h"; sourceTree = "<group>"; };
+		6D1A3BD025F8928C00F71725 /* UILabel+Labbel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Labbel.m"; sourceTree = "<group>"; };
+		6D1A3BD125F8928C00F71725 /* UIButton+MSDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MSDButton.m"; sourceTree = "<group>"; };
+		6D1A3BD225F8928C00F71725 /* UIImageView+ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImageView.h"; sourceTree = "<group>"; };
+		6D1A3BD325F8928C00F71725 /* UILabel+Labbel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Labbel.h"; sourceTree = "<group>"; };
+		6D1A3BD425F8928C00F71725 /* UITextField+MSDTextFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MSDTextFile.m"; sourceTree = "<group>"; };
+		6D1A3BD625F8928C00F71725 /* msdPchfile.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msdPchfile.pch; sourceTree = "<group>"; };
+		6D1A3BED25F892E300F71725 /* NSThreadAll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadAll.h; sourceTree = "<group>"; };
+		6D1A3BEE25F892E300F71725 /* NSThreadAll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSThreadAll.m; sourceTree = "<group>"; };
+		6D1A3BF325F892FD00F71725 /* GCDAll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAll.h; sourceTree = "<group>"; };
+		6D1A3BF425F892FD00F71725 /* GCDAll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAll.m; sourceTree = "<group>"; };
+		6D1A3BF925F8931B00F71725 /* NSOperationAll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationAll.h; sourceTree = "<group>"; };
+		6D1A3BFA25F8931B00F71725 /* NSOperationAll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationAll.m; sourceTree = "<group>"; };
+		6D1A3C0925F8980400F71725 /* MSDViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDViewCell.m; sourceTree = "<group>"; };
+		6D1A3C0A25F8980400F71725 /* MSDViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDViewModel.h; sourceTree = "<group>"; };
+		6D1A3C0B25F8980400F71725 /* MSDViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDViewCell.h; sourceTree = "<group>"; };
+		6D1A3C0C25F8980400F71725 /* MSDViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDViewModel.m; sourceTree = "<group>"; };
+		6D1A3C1225F89DB800F71725 /* GCD_dispatch_group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_dispatch_group.h; sourceTree = "<group>"; };
+		6D1A3C1325F89DB800F71725 /* GCD_dispatch_group.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_dispatch_group.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D37ED2CABFFDC0C109A6D7E /* libPods-ios_thread.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +130,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2339438C165AC2D381B1DC4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CBA7CEDC87778F5FDA9B819 /* libPods-ios_thread.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D1A3B7225F8742A00F71725 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +145,8 @@
 				6D1A3B9C25F8742E00F71725 /* ios_threadTests */,
 				6D1A3BA725F8742E00F71725 /* ios_threadUITests */,
 				6D1A3B7C25F8742A00F71725 /* Products */,
+				D64708BA2B778E6D3FC0BBED /* Pods */,
+				2339438C165AC2D381B1DC4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +163,10 @@
 		6D1A3B7D25F8742B00F71725 /* ios_thread */ = {
 			isa = PBXGroup;
 			children = (
+				6D1A3BD825F8928C00F71725 /* NSThreadFile */,
+				6D1A3BD725F8928C00F71725 /* GCDFile */,
+				6D1A3BC225F8928C00F71725 /* NSoperationQueue */,
+				6D1A3BC325F8928C00F71725 /* CommonFile */,
 				6D1A3B7E25F8742B00F71725 /* AppDelegate.h */,
 				6D1A3B7F25F8742B00F71725 /* AppDelegate.m */,
 				6D1A3B8125F8742B00F71725 /* SceneDelegate.h */,
@@ -140,6 +201,103 @@
 			path = ios_threadUITests;
 			sourceTree = "<group>";
 		};
+		6D1A3BC225F8928C00F71725 /* NSoperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				6D1A3BF925F8931B00F71725 /* NSOperationAll.h */,
+				6D1A3BFA25F8931B00F71725 /* NSOperationAll.m */,
+			);
+			path = NSoperationQueue;
+			sourceTree = "<group>";
+		};
+		6D1A3BC325F8928C00F71725 /* CommonFile */ = {
+			isa = PBXGroup;
+			children = (
+				6D1A3C0825F8976E00F71725 /* CommonView */,
+				6D1A3BC425F8928C00F71725 /* MSDTabBarFile */,
+				6D1A3BCC25F8928C00F71725 /* MSDEncapsulation */,
+				6D1A3BD525F8928C00F71725 /* MSDPchFile */,
+			);
+			path = CommonFile;
+			sourceTree = "<group>";
+		};
+		6D1A3BC425F8928C00F71725 /* MSDTabBarFile */ = {
+			isa = PBXGroup;
+			children = (
+				6D1A3BC625F8928C00F71725 /* tabbar_classification_fill@2x.png */,
+				6D1A3BCA25F8928C00F71725 /* MXTabBarController.h */,
+				6D1A3BC725F8928C00F71725 /* MXTabBarController.m */,
+				6D1A3BC925F8928C00F71725 /* MXTabBarCenterButton.h */,
+				6D1A3BC525F8928C00F71725 /* MXTabBarCenterButton.m */,
+				6D1A3BC825F8928C00F71725 /* MXTabBar.h */,
+				6D1A3BCB25F8928C00F71725 /* MXTabBar.m */,
+			);
+			path = MSDTabBarFile;
+			sourceTree = "<group>";
+		};
+		6D1A3BCC25F8928C00F71725 /* MSDEncapsulation */ = {
+			isa = PBXGroup;
+			children = (
+				6D1A3BCD25F8928C00F71725 /* UIButton+MSDButton.h */,
+				6D1A3BCE25F8928C00F71725 /* UIImageView+ImageView.m */,
+				6D1A3BCF25F8928C00F71725 /* UITextField+MSDTextFile.h */,
+				6D1A3BD025F8928C00F71725 /* UILabel+Labbel.m */,
+				6D1A3BD125F8928C00F71725 /* UIButton+MSDButton.m */,
+				6D1A3BD225F8928C00F71725 /* UIImageView+ImageView.h */,
+				6D1A3BD325F8928C00F71725 /* UILabel+Labbel.h */,
+				6D1A3BD425F8928C00F71725 /* UITextField+MSDTextFile.m */,
+			);
+			path = MSDEncapsulation;
+			sourceTree = "<group>";
+		};
+		6D1A3BD525F8928C00F71725 /* MSDPchFile */ = {
+			isa = PBXGroup;
+			children = (
+				6D1A3BD625F8928C00F71725 /* msdPchfile.pch */,
+			);
+			path = MSDPchFile;
+			sourceTree = "<group>";
+		};
+		6D1A3BD725F8928C00F71725 /* GCDFile */ = {
+			isa = PBXGroup;
+			children = (
+				6D1A3BF325F892FD00F71725 /* GCDAll.h */,
+				6D1A3BF425F892FD00F71725 /* GCDAll.m */,
+				6D1A3C1225F89DB800F71725 /* GCD_dispatch_group.h */,
+				6D1A3C1325F89DB800F71725 /* GCD_dispatch_group.m */,
+			);
+			path = GCDFile;
+			sourceTree = "<group>";
+		};
+		6D1A3BD825F8928C00F71725 /* NSThreadFile */ = {
+			isa = PBXGroup;
+			children = (
+				6D1A3BED25F892E300F71725 /* NSThreadAll.h */,
+				6D1A3BEE25F892E300F71725 /* NSThreadAll.m */,
+			);
+			path = NSThreadFile;
+			sourceTree = "<group>";
+		};
+		6D1A3C0825F8976E00F71725 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				6D1A3C0B25F8980400F71725 /* MSDViewCell.h */,
+				6D1A3C0925F8980400F71725 /* MSDViewCell.m */,
+				6D1A3C0A25F8980400F71725 /* MSDViewModel.h */,
+				6D1A3C0C25F8980400F71725 /* MSDViewModel.m */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+		D64708BA2B778E6D3FC0BBED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C9CF00C43F3FAD8A9BCB407 /* Pods-ios_thread.debug.xcconfig */,
+				3F7489E6825436EDBECDF329 /* Pods-ios_thread.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +305,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D1A3BAD25F8742E00F71725 /* Build configuration list for PBXNativeTarget "ios_thread" */;
 			buildPhases = (
+				E75DEAAE9401EE544B1AC600 /* [CP] Check Pods Manifest.lock */,
 				6D1A3B7725F8742A00F71725 /* Sources */,
 				6D1A3B7825F8742A00F71725 /* Frameworks */,
 				6D1A3B7925F8742A00F71725 /* Resources */,
@@ -243,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D1A3B9125F8742E00F71725 /* LaunchScreen.storyboard in Resources */,
+				6D1A3BDA25F8928C00F71725 /* tabbar_classification_fill@2x.png in Resources */,
 				6D1A3B8E25F8742E00F71725 /* Assets.xcassets in Resources */,
 				6D1A3B8925F8742B00F71725 /* Main.storyboard in Resources */,
 			);
@@ -264,15 +424,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E75DEAAE9401EE544B1AC600 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios_thread-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D1A3B7725F8742A00F71725 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1A3BDF25F8928C00F71725 /* UIButton+MSDButton.m in Sources */,
+				6D1A3BDE25F8928C00F71725 /* UILabel+Labbel.m in Sources */,
 				6D1A3B9425F8742E00F71725 /* main.m in Sources */,
+				6D1A3BE025F8928C00F71725 /* UITextField+MSDTextFile.m in Sources */,
+				6D1A3C0E25F8980400F71725 /* MSDViewModel.m in Sources */,
+				6D1A3BD925F8928C00F71725 /* MXTabBarCenterButton.m in Sources */,
+				6D1A3C1425F89DB800F71725 /* GCD_dispatch_group.m in Sources */,
+				6D1A3BDD25F8928C00F71725 /* UIImageView+ImageView.m in Sources */,
+				6D1A3BDB25F8928C00F71725 /* MXTabBarController.m in Sources */,
+				6D1A3C0D25F8980400F71725 /* MSDViewCell.m in Sources */,
+				6D1A3BFB25F8931B00F71725 /* NSOperationAll.m in Sources */,
+				6D1A3BEF25F892E300F71725 /* NSThreadAll.m in Sources */,
+				6D1A3BF525F892FD00F71725 /* GCDAll.m in Sources */,
 				6D1A3B8625F8742B00F71725 /* ViewController.m in Sources */,
 				6D1A3B8C25F8742B00F71725 /* ios_thread.xcdatamodeld in Sources */,
 				6D1A3B8025F8742B00F71725 /* AppDelegate.m in Sources */,
+				6D1A3BDC25F8928C00F71725 /* MXTabBar.m in Sources */,
 				6D1A3B8325F8742B00F71725 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,11 +640,14 @@
 		};
 		6D1A3BAE25F8742E00F71725 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9CF00C43F3FAD8A9BCB407 /* Pods-ios_thread.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQW457Z644;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ios_thread/CommonFile/MSDPchFile/msdPchfile.pch";
 				INFOPLIST_FILE = ios_thread/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,16 +656,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mashudong.ios-thread";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
 		6D1A3BAF25F8742E00F71725 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F7489E6825436EDBECDF329 /* Pods-ios_thread.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQW457Z644;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ios_thread/CommonFile/MSDPchFile/msdPchfile.pch";
 				INFOPLIST_FILE = ios_thread/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,6 +678,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mashudong.ios-thread";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

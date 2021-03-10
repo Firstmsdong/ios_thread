@@ -1,0 +1,41 @@
+//
+//  msdPchfile.pch
+//  iosKnowledge
+//
+//  Created by 马淑栋 on 2020/12/7.
+//
+
+#ifndef msdPchfile_pch
+#define msdPchfile_pch
+
+/*      常用的第三库文件       */
+#import "AFNetworking.h"//数据请求第三方
+#import "UIImageView+WebCache.h"//图片加载第三方
+//#import "MBProgressHUD.h"//加载第三方
+//#import "Masonry.h"//约束文件
+
+/*      常用的控件封装       */
+#import "UILabel+Labbel.h" //lab
+#import "UIButton+MSDButton.h" //button
+#import "UITextField+MSDTextFile.h" //textfile
+
+/*      常用的属性         */
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height//屏幕高度
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width//屏幕长度
+#define VIEW_Y(view) view.frame.origin.y//纵坐标
+#define VIEW_H(view) view.frame.size.height//高度
+#define View_H_Y(view) view.frame.origin.y + view.frame.size.height//纵坐标+高度
+#define View_W_X(view) view.frame.origin.x+ view.frame.size.width//横坐标 + 高度
+#define VIEW_X(view) view.frame.origin.x //横坐标
+#define VIEW_W(view) view.frame.size.width //宽度
+#define URLCOMMON  @"http://123.56.183.161:8091"
+
+/*     通用文件     */
+#import "MXTabBarController.h"
+#import "NSThreadAll.h"
+#import "GCDAll.h"
+#import "NSOperationAll.h"
+#import "MSDViewModel.h"
+#import "MSDViewCell.h"
+
+#endif
