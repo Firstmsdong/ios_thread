@@ -20,13 +20,28 @@
     
     self.view.backgroundColor = [UIColor redColor];
     [self.view addSubview:self.contentTbale];
-//
+////
     __weak __typeof(self) weakself= self;
+//
+//
+//        dispatch_async(dispatch_queue_create(0, 0), ^{
+//            [weakself ];
+//            NSLog(@"%lu",(unsigned long)self.dataSouce.count);
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                NSLog(@"返回主线程");
+////            [self.contentTbale reloadData];
+//            });
+//        });
     
+       dispatch_group_t group = dispatch_group_create();
+        // 广告数组
+        dispatch_group_enter(group);
+        [self getAdHotTopDataBaseRequestisScu:^(BOOL isScu) {
+            dispatch_group_leave(group);
+        }];
 
-        dispatch_async(dispatch_queue_create(0, 0), ^{
-            [weakself loadFirstPageData];
-            // 子线程执行任务（比如获取较大数据）
+        dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+            [weakself.contentTbale reloadData];
         });
 
 }
@@ -52,7 +67,7 @@
 }
 
 #pragma mark 接口数据请求
--(void)loadFirstPageData{
+- (void)getAdHotTopDataBaseRequestisScu:(void(^)(BOOL isScu))requestisScu{{
     
     NSLog(@"---------");
     NSDictionary * params = @{};
@@ -60,10 +75,8 @@
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     [manager.requestSerializer setValue:@"V1.0" forHTTPHeaderField:@"version"];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/html",@"application/json", nil];
-//http://123.56.183.161:8091/appindexcontext/selectAllAppIndexContext
-    
     [manager GET:[NSString stringWithFormat:@"%@/appindexcontext/selectAllAppIndexContext",URLCOMMON] parameters:params headers:params progress:^(NSProgress * _Nonnull downloadProgress){} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+        NSLog(@"即将返回主线程");
         for (NSDictionary * dic in responseObject[@"data"]) {
             
             MSDViewModel * model = [[MSDViewModel alloc] init];
@@ -72,26 +85,15 @@
                 [self.dataSouce addObject:model];
             }
         }
-        dispatch_async(dispatch_get_main_queue(), ^{
-        [self.contentTbale reloadData];
-        });
-        
+        if(requestisScu){
+                    requestisScu((200 == [responseObject[@"status"] integerValue])?YES:NO);
+        }
+
+        NSLog(@"耗时操作执行完毕");
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
-    
-//    [manager GET:[NSString stringWithFormat:@"%@/appindexcontext/selectAllAppIndexContext",URLCOMMON] parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
-//
-//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//
-//        NSLog(@"=====首页数据=====%@",responseObject);
-//
-//        if ([responseObject[@"status"] intValue] ==200) {
-//
-//        }
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//
-//    }];
+}
     
 }
 
