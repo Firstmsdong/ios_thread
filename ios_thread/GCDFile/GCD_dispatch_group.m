@@ -14,7 +14,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self creaCommontView];
+//    [self creaCommontView];
+    [self grop];
 }
 -(void)creaCommontView{
     
@@ -69,14 +70,12 @@
 #pragma mark 接口数据请求
 - (void)getAdHotTopDataBaseRequestisScu:(void(^)(BOOL isScu))requestisScu{{
     
-    NSLog(@"---------");
     NSDictionary * params = @{};
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     [manager.requestSerializer setValue:@"V1.0" forHTTPHeaderField:@"version"];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"text/html",@"application/json", nil];
     [manager GET:[NSString stringWithFormat:@"%@/appindexcontext/selectAllAppIndexContext",URLCOMMON] parameters:params headers:params progress:^(NSProgress * _Nonnull downloadProgress){} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"即将返回主线程");
         for (NSDictionary * dic in responseObject[@"data"]) {
             
             MSDViewModel * model = [[MSDViewModel alloc] init];
@@ -86,10 +85,8 @@
             }
         }
         if(requestisScu){
-                    requestisScu((200 == [responseObject[@"status"] integerValue])?YES:NO);
+              requestisScu((200 == [responseObject[@"status"] integerValue])?YES:NO);
         }
-
-        NSLog(@"耗时操作执行完毕");
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
@@ -115,4 +112,28 @@
     }
     return _contentTbale;
 }
+
+-(void)grop{
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_queue_t queue = dispatch_queue_create("com.thread.task", DISPATCH_QUEUE_CONCURRENT);
+    NSLog(@"当前线程1");
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"开始请求-轮播图-数据 -> %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"获取到-轮播图-数据 -> %@",[NSThread currentThread]);
+    });
+    NSLog(@"当前线程2");
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"开始请求-列表-数据 -> %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:3];
+        NSLog(@"获取到-列表-数据 -> %@",[NSThread currentThread]);
+    });
+    NSLog(@"当前线程3");
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"回到主线程刷新列表");
+        [NSThread sleepForTimeInterval:1];
+    });
+    NSLog(@"当前线程4");
+}
+
 @end

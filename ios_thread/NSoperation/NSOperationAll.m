@@ -1,26 +1,25 @@
 //
-//  GCDAll.m
+//  NSOperationAll.m
 //  ios_thread
 //
 //  Created by 马淑栋 on 2021/3/10.
 //
 
-#import "GCDAll.h"
-#import "GCD_dispatch_group.h"
-#import "GCD_Get_Queue.h"
-#import "GCD_Base_Use.h"
-#import "GCD_dispatch_barrier_async.h"
-#import "GCD_dispatch_after.h"
-#import "GCD_dispatch_apply.h"
-#import "GCD_dispatch_semaphore.h"
-#import "GCD_dispatch_timer.h"
-@interface GCDAll ()
-<UITableViewDelegate,UITableViewDataSource>
+#import "NSOperationAll.h"
+#import "Operation_creat.h"
+#import "Operation_Queue_creat.h"
+#import "Operation_task_add_queue.h"
+#import "Operation_Control_queueWay.h"
+#import "Operation_relyOn.h"
+#import "Operation_ queuePriority.h"
+#import "Operation_communication.h"
+@interface NSOperationAll ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSMutableArray * dataSouce;
 @property(nonatomic,strong)UITableView * contentTbale;
+
 @end
 
-@implementation GCDAll
+@implementation NSOperationAll
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,66 +49,60 @@
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 50;
+    return 60;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row == 0) {
-        GCD_dispatch_group  * dispatchGroup = [[GCD_dispatch_group alloc] init];
-        dispatchGroup.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:dispatchGroup animated:YES];
+        Operation_creat  * operation_creat = [[Operation_creat alloc] init];
+        operation_creat.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:operation_creat animated:YES];
         self.hidesBottomBarWhenPushed =YES;
     }
-
     if (indexPath.row == 1) {
-        GCD_Get_Queue  * getQueue = [[GCD_Get_Queue alloc] init];
-        getQueue.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:getQueue animated:YES];
+        Operation_Queue_creat  * operation_queue_creat = [[Operation_Queue_creat alloc] init];
+        operation_queue_creat.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:operation_queue_creat animated:YES];
         self.hidesBottomBarWhenPushed =YES;
     }
     if (indexPath.row == 2) {
-        GCD_Base_Use  * baseUse = [[GCD_Base_Use alloc] init];
-        baseUse.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:baseUse animated:YES];
+        Operation_task_add_queue  * operation_add_task_queue = [[Operation_task_add_queue alloc] init];
+        operation_add_task_queue.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:operation_add_task_queue animated:YES];
         self.hidesBottomBarWhenPushed =YES;
     }
     if (indexPath.row == 3) {
-        GCD_dispatch_barrier_async  * dispatch_barrier_async = [[GCD_dispatch_barrier_async alloc] init];
-        dispatch_barrier_async.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:dispatch_barrier_async animated:YES];
+        Operation_Control_queueWay  * operation_controllQueue = [[Operation_Control_queueWay alloc] init];
+        operation_controllQueue.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:operation_controllQueue animated:YES];
         self.hidesBottomBarWhenPushed =YES;
     }
     if (indexPath.row == 4) {
-        GCD_dispatch_after  * dispatch_after = [[GCD_dispatch_after alloc] init];
-        dispatch_after.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:dispatch_after animated:YES];
+        Operation_relyOn  * operation_relyon = [[Operation_relyOn alloc] init];
+        operation_relyon.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:operation_relyon animated:YES];
         self.hidesBottomBarWhenPushed =YES;
     }
     if (indexPath.row == 5) {
-        GCD_dispatch_apply  * dispatch_apply = [[GCD_dispatch_apply alloc] init];
-        dispatch_apply.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:dispatch_apply animated:YES];
+        Operation__queuePriority  * operation_queuePriority = [[Operation__queuePriority alloc] init];
+        operation_queuePriority.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:operation_queuePriority animated:YES];
         self.hidesBottomBarWhenPushed =YES;
     }
     if (indexPath.row == 6) {
-        GCD_dispatch_semaphore  * dispatch_semapPhore = [[GCD_dispatch_semaphore alloc] init];
-        dispatch_semapPhore.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:dispatch_semapPhore animated:YES];
+        Operation_communication  * operation_communication = [[Operation_communication alloc] init];
+        operation_communication.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:operation_communication animated:YES];
         self.hidesBottomBarWhenPushed =YES;
     }
-    if (indexPath.row == 7) {
-        GCD_dispatch_timer  * dispatch_timer = [[GCD_dispatch_timer alloc] init];
-        dispatch_timer.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:dispatch_timer animated:YES];
-        self.hidesBottomBarWhenPushed =YES;
-    }
+    
 }
 
 # pragma mark 懒加载
 -(NSMutableArray *)dataSouce{
     if (!_dataSouce) {
         _dataSouce = [[NSMutableArray alloc] init];
-        NSArray * arrCon = @[@"任务组(dispatch_group)",@"队列获取",@"线程的基本使用",@"栅栏函数的实现",@"延迟操作",@"快速迭代",@"GCD信号量",@"定时器的使用"];
+        NSArray * arrCon = @[@"Operation创建操作",@"队列创建",@"将任务加入到队列中",@"NSOperationQueue 控制串行执行、并发执行",@"操作依赖",@"操作优先级",@"NSOperation、NSOperationQueue 线程间的通信"];
         for (int i = 0; i<arrCon.count; i++) {
             MSDViewModel * model = [[MSDViewModel alloc] init];
             model.contentStr = arrCon[i];
@@ -128,6 +121,5 @@
     }
     return _contentTbale;
 }
-
 
 @end

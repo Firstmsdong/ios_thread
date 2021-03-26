@@ -23,11 +23,12 @@
         
         self.contentView.backgroundColor = [UIColor whiteColor];
         self.contentLab = [[UILabel alloc] init];
-        self.contentLab.frame =CGRectMake(10, 0, SCREEN_WIDTH-20, 40);
+        self.contentLab.frame =CGRectMake(10, 0, SCREEN_WIDTH-20, 60);
         self.contentLab.textColor =[UIColor blackColor];
-        self.contentLab.font = [UIFont fontWithName:@"Helvetica-Bold" size:15];
-        self.contentLab.textAlignment =NSTextAlignmentCenter;
+        self.contentLab.font = [UIFont fontWithName:@"Helvetica-Bold" size:18];
+        self.contentLab.textAlignment =NSTextAlignmentLeft;
         self.contentLab.backgroundColor =[UIColor  clearColor];
+        self.contentLab.numberOfLines  = 0;
         [self.contentView  addSubview:self.contentLab];
         
     }

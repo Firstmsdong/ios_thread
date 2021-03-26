@@ -32,6 +32,21 @@
 		6D1A3C0D25F8980400F71725 /* MSDViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3C0925F8980400F71725 /* MSDViewCell.m */; };
 		6D1A3C0E25F8980400F71725 /* MSDViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3C0C25F8980400F71725 /* MSDViewModel.m */; };
 		6D1A3C1425F89DB800F71725 /* GCD_dispatch_group.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A3C1325F89DB800F71725 /* GCD_dispatch_group.m */; };
+		6D3BFD1D260B91390049C672 /* GCD_dispatch_semaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3BFD1C260B91390049C672 /* GCD_dispatch_semaphore.m */; };
+		6D3BFD23260B9C220049C672 /* GCD_dispatch_timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3BFD22260B9C220049C672 /* GCD_dispatch_timer.m */; };
+		6D3E164A260C3B03002B4D50 /* Operation_creat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3E1649260C3B03002B4D50 /* Operation_creat.m */; };
+		6D3E1650260C6D7C002B4D50 /* Operation_child.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3E164F260C6D7C002B4D50 /* Operation_child.m */; };
+		6D3E1656260C72CA002B4D50 /* Operation_Queue_creat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3E1655260C72CA002B4D50 /* Operation_Queue_creat.m */; };
+		6D3E165C260C75F0002B4D50 /* Operation_task_add_queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3E165B260C75F0002B4D50 /* Operation_task_add_queue.m */; };
+		6D3E1665260C82A8002B4D50 /* Operation_Control_queueWay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3E1664260C82A8002B4D50 /* Operation_Control_queueWay.m */; };
+		6D3E166B260C899C002B4D50 /* Operation_relyOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3E166A260C899C002B4D50 /* Operation_relyOn.m */; };
+		6D3E1671260C8EC4002B4D50 /* Operation_ queuePriority.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3E1670260C8EC4002B4D50 /* Operation_ queuePriority.m */; };
+		6D3EC174260CE20D001F3D8E /* Operation_communication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3EC173260CE20D001F3D8E /* Operation_communication.m */; };
+		6D407EE8260B307D00E2B0AB /* GCD_dispatch_barrier_async.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D407EE7260B307D00E2B0AB /* GCD_dispatch_barrier_async.m */; };
+		6D407EEE260B3A7200E2B0AB /* GCD_dispatch_after.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D407EED260B3A7200E2B0AB /* GCD_dispatch_after.m */; };
+		6D407EF4260B3E4100E2B0AB /* GCD_dispatch_apply.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D407EF3260B3E4100E2B0AB /* GCD_dispatch_apply.m */; };
+		6D44F31A260A32E40099AED8 /* GCD_Base_Use.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D44F319260A32E40099AED8 /* GCD_Base_Use.m */; };
+		6DA9C442260890B000337BDC /* GCD_Get_Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9C441260890B000337BDC /* GCD_Get_Queue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +117,36 @@
 		6D1A3C0C25F8980400F71725 /* MSDViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDViewModel.m; sourceTree = "<group>"; };
 		6D1A3C1225F89DB800F71725 /* GCD_dispatch_group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_dispatch_group.h; sourceTree = "<group>"; };
 		6D1A3C1325F89DB800F71725 /* GCD_dispatch_group.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_dispatch_group.m; sourceTree = "<group>"; };
+		6D3BFD1B260B91390049C672 /* GCD_dispatch_semaphore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_dispatch_semaphore.h; sourceTree = "<group>"; };
+		6D3BFD1C260B91390049C672 /* GCD_dispatch_semaphore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_dispatch_semaphore.m; sourceTree = "<group>"; };
+		6D3BFD21260B9C220049C672 /* GCD_dispatch_timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_dispatch_timer.h; sourceTree = "<group>"; };
+		6D3BFD22260B9C220049C672 /* GCD_dispatch_timer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_dispatch_timer.m; sourceTree = "<group>"; };
+		6D3E1648260C3B03002B4D50 /* Operation_creat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operation_creat.h; sourceTree = "<group>"; };
+		6D3E1649260C3B03002B4D50 /* Operation_creat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Operation_creat.m; sourceTree = "<group>"; };
+		6D3E164E260C6D7C002B4D50 /* Operation_child.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operation_child.h; sourceTree = "<group>"; };
+		6D3E164F260C6D7C002B4D50 /* Operation_child.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Operation_child.m; sourceTree = "<group>"; };
+		6D3E1654260C72CA002B4D50 /* Operation_Queue_creat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operation_Queue_creat.h; sourceTree = "<group>"; };
+		6D3E1655260C72CA002B4D50 /* Operation_Queue_creat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Operation_Queue_creat.m; sourceTree = "<group>"; };
+		6D3E165A260C75F0002B4D50 /* Operation_task_add_queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operation_task_add_queue.h; sourceTree = "<group>"; };
+		6D3E165B260C75F0002B4D50 /* Operation_task_add_queue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Operation_task_add_queue.m; sourceTree = "<group>"; };
+		6D3E1663260C82A8002B4D50 /* Operation_Control_queueWay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operation_Control_queueWay.h; sourceTree = "<group>"; };
+		6D3E1664260C82A8002B4D50 /* Operation_Control_queueWay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Operation_Control_queueWay.m; sourceTree = "<group>"; };
+		6D3E1669260C899C002B4D50 /* Operation_relyOn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operation_relyOn.h; sourceTree = "<group>"; };
+		6D3E166A260C899C002B4D50 /* Operation_relyOn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Operation_relyOn.m; sourceTree = "<group>"; };
+		6D3E166F260C8EC4002B4D50 /* Operation_ queuePriority.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Operation_ queuePriority.h"; sourceTree = "<group>"; };
+		6D3E1670260C8EC4002B4D50 /* Operation_ queuePriority.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Operation_ queuePriority.m"; sourceTree = "<group>"; };
+		6D3EC172260CE20D001F3D8E /* Operation_communication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operation_communication.h; sourceTree = "<group>"; };
+		6D3EC173260CE20D001F3D8E /* Operation_communication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Operation_communication.m; sourceTree = "<group>"; };
+		6D407EE6260B307D00E2B0AB /* GCD_dispatch_barrier_async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_dispatch_barrier_async.h; sourceTree = "<group>"; };
+		6D407EE7260B307D00E2B0AB /* GCD_dispatch_barrier_async.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_dispatch_barrier_async.m; sourceTree = "<group>"; };
+		6D407EEC260B3A7200E2B0AB /* GCD_dispatch_after.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_dispatch_after.h; sourceTree = "<group>"; };
+		6D407EED260B3A7200E2B0AB /* GCD_dispatch_after.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_dispatch_after.m; sourceTree = "<group>"; };
+		6D407EF2260B3E4100E2B0AB /* GCD_dispatch_apply.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_dispatch_apply.h; sourceTree = "<group>"; };
+		6D407EF3260B3E4100E2B0AB /* GCD_dispatch_apply.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_dispatch_apply.m; sourceTree = "<group>"; };
+		6D44F318260A32E40099AED8 /* GCD_Base_Use.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_Base_Use.h; sourceTree = "<group>"; };
+		6D44F319260A32E40099AED8 /* GCD_Base_Use.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_Base_Use.m; sourceTree = "<group>"; };
+		6DA9C440260890B000337BDC /* GCD_Get_Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD_Get_Queue.h; sourceTree = "<group>"; };
+		6DA9C441260890B000337BDC /* GCD_Get_Queue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_Get_Queue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +210,7 @@
 			children = (
 				6D1A3BD825F8928C00F71725 /* NSThreadFile */,
 				6D1A3BD725F8928C00F71725 /* GCDFile */,
-				6D1A3BC225F8928C00F71725 /* NSoperationQueue */,
+				6D1A3BC225F8928C00F71725 /* NSoperation */,
 				6D1A3BC325F8928C00F71725 /* CommonFile */,
 				6D1A3B7E25F8742B00F71725 /* AppDelegate.h */,
 				6D1A3B7F25F8742B00F71725 /* AppDelegate.m */,
@@ -201,13 +246,29 @@
 			path = ios_threadUITests;
 			sourceTree = "<group>";
 		};
-		6D1A3BC225F8928C00F71725 /* NSoperationQueue */ = {
+		6D1A3BC225F8928C00F71725 /* NSoperation */ = {
 			isa = PBXGroup;
 			children = (
 				6D1A3BF925F8931B00F71725 /* NSOperationAll.h */,
 				6D1A3BFA25F8931B00F71725 /* NSOperationAll.m */,
+				6D3E1648260C3B03002B4D50 /* Operation_creat.h */,
+				6D3E1649260C3B03002B4D50 /* Operation_creat.m */,
+				6D3E164E260C6D7C002B4D50 /* Operation_child.h */,
+				6D3E164F260C6D7C002B4D50 /* Operation_child.m */,
+				6D3E1654260C72CA002B4D50 /* Operation_Queue_creat.h */,
+				6D3E1655260C72CA002B4D50 /* Operation_Queue_creat.m */,
+				6D3E165A260C75F0002B4D50 /* Operation_task_add_queue.h */,
+				6D3E165B260C75F0002B4D50 /* Operation_task_add_queue.m */,
+				6D3E1663260C82A8002B4D50 /* Operation_Control_queueWay.h */,
+				6D3E1664260C82A8002B4D50 /* Operation_Control_queueWay.m */,
+				6D3E1669260C899C002B4D50 /* Operation_relyOn.h */,
+				6D3E166A260C899C002B4D50 /* Operation_relyOn.m */,
+				6D3E166F260C8EC4002B4D50 /* Operation_ queuePriority.h */,
+				6D3E1670260C8EC4002B4D50 /* Operation_ queuePriority.m */,
+				6D3EC172260CE20D001F3D8E /* Operation_communication.h */,
+				6D3EC173260CE20D001F3D8E /* Operation_communication.m */,
 			);
-			path = NSoperationQueue;
+			path = NSoperation;
 			sourceTree = "<group>";
 		};
 		6D1A3BC325F8928C00F71725 /* CommonFile */ = {
@@ -265,6 +326,20 @@
 				6D1A3BF425F892FD00F71725 /* GCDAll.m */,
 				6D1A3C1225F89DB800F71725 /* GCD_dispatch_group.h */,
 				6D1A3C1325F89DB800F71725 /* GCD_dispatch_group.m */,
+				6DA9C440260890B000337BDC /* GCD_Get_Queue.h */,
+				6DA9C441260890B000337BDC /* GCD_Get_Queue.m */,
+				6D44F318260A32E40099AED8 /* GCD_Base_Use.h */,
+				6D44F319260A32E40099AED8 /* GCD_Base_Use.m */,
+				6D407EE6260B307D00E2B0AB /* GCD_dispatch_barrier_async.h */,
+				6D407EE7260B307D00E2B0AB /* GCD_dispatch_barrier_async.m */,
+				6D407EEC260B3A7200E2B0AB /* GCD_dispatch_after.h */,
+				6D407EED260B3A7200E2B0AB /* GCD_dispatch_after.m */,
+				6D407EF2260B3E4100E2B0AB /* GCD_dispatch_apply.h */,
+				6D407EF3260B3E4100E2B0AB /* GCD_dispatch_apply.m */,
+				6D3BFD1B260B91390049C672 /* GCD_dispatch_semaphore.h */,
+				6D3BFD1C260B91390049C672 /* GCD_dispatch_semaphore.m */,
+				6D3BFD21260B9C220049C672 /* GCD_dispatch_timer.h */,
+				6D3BFD22260B9C220049C672 /* GCD_dispatch_timer.m */,
 			);
 			path = GCDFile;
 			sourceTree = "<group>";
@@ -456,22 +531,37 @@
 			files = (
 				6D1A3BDF25F8928C00F71725 /* UIButton+MSDButton.m in Sources */,
 				6D1A3BDE25F8928C00F71725 /* UILabel+Labbel.m in Sources */,
+				6DA9C442260890B000337BDC /* GCD_Get_Queue.m in Sources */,
 				6D1A3B9425F8742E00F71725 /* main.m in Sources */,
 				6D1A3BE025F8928C00F71725 /* UITextField+MSDTextFile.m in Sources */,
+				6D3BFD23260B9C220049C672 /* GCD_dispatch_timer.m in Sources */,
 				6D1A3C0E25F8980400F71725 /* MSDViewModel.m in Sources */,
 				6D1A3BD925F8928C00F71725 /* MXTabBarCenterButton.m in Sources */,
+				6D3EC174260CE20D001F3D8E /* Operation_communication.m in Sources */,
 				6D1A3C1425F89DB800F71725 /* GCD_dispatch_group.m in Sources */,
+				6D407EF4260B3E4100E2B0AB /* GCD_dispatch_apply.m in Sources */,
 				6D1A3BDD25F8928C00F71725 /* UIImageView+ImageView.m in Sources */,
+				6D3E1650260C6D7C002B4D50 /* Operation_child.m in Sources */,
+				6D3E1671260C8EC4002B4D50 /* Operation_ queuePriority.m in Sources */,
+				6D407EEE260B3A7200E2B0AB /* GCD_dispatch_after.m in Sources */,
+				6D3E1656260C72CA002B4D50 /* Operation_Queue_creat.m in Sources */,
 				6D1A3BDB25F8928C00F71725 /* MXTabBarController.m in Sources */,
 				6D1A3C0D25F8980400F71725 /* MSDViewCell.m in Sources */,
 				6D1A3BFB25F8931B00F71725 /* NSOperationAll.m in Sources */,
+				6D3E164A260C3B03002B4D50 /* Operation_creat.m in Sources */,
+				6D3E166B260C899C002B4D50 /* Operation_relyOn.m in Sources */,
 				6D1A3BEF25F892E300F71725 /* NSThreadAll.m in Sources */,
+				6D44F31A260A32E40099AED8 /* GCD_Base_Use.m in Sources */,
 				6D1A3BF525F892FD00F71725 /* GCDAll.m in Sources */,
 				6D1A3B8625F8742B00F71725 /* ViewController.m in Sources */,
 				6D1A3B8C25F8742B00F71725 /* ios_thread.xcdatamodeld in Sources */,
+				6D3BFD1D260B91390049C672 /* GCD_dispatch_semaphore.m in Sources */,
 				6D1A3B8025F8742B00F71725 /* AppDelegate.m in Sources */,
+				6D407EE8260B307D00E2B0AB /* GCD_dispatch_barrier_async.m in Sources */,
 				6D1A3BDC25F8928C00F71725 /* MXTabBar.m in Sources */,
+				6D3E165C260C75F0002B4D50 /* Operation_task_add_queue.m in Sources */,
 				6D1A3B8325F8742B00F71725 /* SceneDelegate.m in Sources */,
+				6D3E1665260C82A8002B4D50 /* Operation_Control_queueWay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
